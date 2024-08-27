@@ -10,7 +10,19 @@ const isDivisibleBy5 = (num1) => {
     }
 }
 
+// Newly defined after a test code completed
+const checkOddEven = (num2) => {
+    if (num2 % 2 == 0) {
+        return "even";
+    }
+        else {
+            return "odd";
+    }
+}
+
+// allows other js files to use the addFunc and isDivisibleBy5 using the require keyword
 module.exports = {
     addFunc,
-    isDivisibleBy5
+    isDivisibleBy5,
+    checkOddEven
 }
